@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição</title>
+</head>
+<body>
+    <h1>{{ prod.nome }}</h1>
+    <h5></h5>
+    <img src="{{ prod.imagem.url }}">
+    <h2>
+        {% if prod.lancamento == True %}
+        Lançamento!!
+        {% endif %}
+    </h2>
+    <p> {{ prod.descricao }}</p>
+    <h3> preço:{{ prod.preco}} </h3>
+    <h3> estoque: {{ prod.estoque }} </h3>
+    
+</body>
+</html>
